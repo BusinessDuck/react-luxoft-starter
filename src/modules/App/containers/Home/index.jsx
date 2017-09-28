@@ -3,6 +3,7 @@ import React, {
 } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
+import { UserListContainer } from "modules/Demo";
 
 @connect()
 export class AppHomeContainer extends Component {
@@ -19,7 +20,9 @@ export class AppHomeContainer extends Component {
 
   render() {
     return (
-      null
+      <div>
+        <UserListContainer/>
+      </div>
     );
   }
 }

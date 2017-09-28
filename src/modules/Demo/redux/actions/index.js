@@ -18,10 +18,12 @@ export function getUsers() {
   return dispatch => {
     dispatch(getUsersStart());
     API.getUsers()
-       .then(data => {
-         dispatch(setUsers(data));
+       .then(response => {
+         dispatch(setUsers(response.data));
        })
-       .catch(error => dispatch(getUsersError(error)));
+       .catch(error => {
+         dispatch(getUsersError(error));
+       });
   };
 }
 

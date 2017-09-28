@@ -4,7 +4,7 @@ import {
 } from "immutable";
 import * as actionTypes from "../constants";
 
-export default function importDumpReducer(state = fromJS(initialState), action) {
+export function UserListReducer(state = fromJS(initialState), action) {
 
   switch (action.type) {
     case actionTypes.SET_USERS:
@@ -18,5 +18,8 @@ export default function importDumpReducer(state = fromJS(initialState), action) 
 
     case actionTypes.GET_USERS_ERROR:
       return state.set("usersPending", false);
+
+    default:
+      return state;
   }
 }

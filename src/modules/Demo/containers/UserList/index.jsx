@@ -3,7 +3,7 @@ import React, {
 } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import UserListComponent from "../../components/UserList";
+import { UserListComponent } from "../../components/UserList";
 import { getUsers } from "../../redux/actions";
 
 @connect(({ demo }) => ({
@@ -32,7 +32,7 @@ export class UserListContainer extends Component {
     return (
       <div>
         <button onClick={this.refreshUsers}>Refresh user list</button>
-        <UserListComponent/>
+        <UserListComponent users={ this.props.users.toJS() }/>
       </div>
     );
   }

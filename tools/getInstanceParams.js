@@ -1,7 +1,7 @@
 /* global process */
 
 export default function getParams(isDev) {
-  const basePath = '/lkfl';
+  const basePath = '';
   const apiBasePath = `${ basePath }/api/v1`;
 
   return Object.assign({
@@ -11,7 +11,7 @@ export default function getParams(isDev) {
   }, parseProcessArgs());
 }
 
-function parseProcessArgs() {
+export function parseProcessArgs() {
   const args = {
     node: process.argv[0],
     script: process.argv[1]

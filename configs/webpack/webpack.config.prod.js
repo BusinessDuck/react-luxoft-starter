@@ -111,9 +111,11 @@ export default {
       },
       {
         test: /(\.css|\.scss|\.sass)$/,
-        loader: ExtractTextPlugin.extract(
-          'css-loader?sourceMap!postcss-loader!resolve-url-loader!sass-loader?sourceMap'
-        )
+        loader: ExtractTextPlugin.extract([
+          {loader: 'css-loader', options: {sourceMap: false}},
+          {loader: 'postcss-loader', options: {plugins: () => [require('autoprefixer')]}},
+          {loader: 'sass-loader', options: {sourceMap: false}}
+        ])
       }
     ]
   }
