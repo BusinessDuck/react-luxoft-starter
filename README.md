@@ -1,10 +1,10 @@
-##Mocks based on [url-pattern](https://www.npmjs.com/package/url-pattern) [json-schema-faker](https://github.com/json-schema-faker/json-schema-faker)
+## Mocks based on [url-pattern](https://www.npmjs.com/package/url-pattern) [json-schema-faker](https://github.com/json-schema-faker/json-schema-faker)
 
 ### See the docs [Mocks](https://github.com/BusinessDuck/react-luxoft-starter/blob/master/docs/mocks.md)
 
 
 
-##Technologies
+## Technologies
 Slingshot offers a rich development experience using the following technologies:
 
 | **Tech** | **Description** |**Learn More**|
