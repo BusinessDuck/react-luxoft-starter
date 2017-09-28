@@ -16,7 +16,7 @@ console.log(chalkSuccess('Dependencies installed.'));
 prompt.start();
 
 console.log(chalkWarn("WARNING:  Preparing to delete local git repository..."));
-prompt.get([{name: 'deleteGit', description: "Delete the git repository?  YES to continue or NO to skip."}], function(err, result) {
+prompt.get([{ name: 'deleteGit', description: "Delete the git repository?  YES to continue or NO to skip." }], function(err, result) {
   var deleteGit;
 
   if (err) {

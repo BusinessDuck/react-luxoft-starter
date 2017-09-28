@@ -20,27 +20,49 @@
   "env": {
     "es6": true,
     "browser": true,
-    "node": true,
-    "jquery": true,
+    "commonjs": true,
     "jest": true
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": {
+          "resolve": {
+            "extensions": [
+              "*", ".json",
+              ".js", ".jsx",
+              ".less", ".css"
+            ],
+            "modules": [
+              "src",
+              "node_modules"
+            ]
+          }
+        }
+      }
+    }
   },
   "rules": {
     "quotes": 0,
     "no-console": 1,
+    "no-constant-condition": 0,
     "no-debugger": 1,
     "no-var": 1,
+    "comma-dangle": "error",
     "semi": [1, "always"],
-    "no-trailing-spaces": 0,
+    "no-trailing-spaces": 1,
+    "no-multi-spaces": 1,
+    "object-curly-spacing": [1, "always"],
+    "key-spacing": 1,
     "eol-last": 0,
     "no-underscore-dangle": 0,
     "no-alert": 0,
     "no-lone-blocks": 0,
     "jsx-quotes": 1,
     "react/display-name": [ 1, {"ignoreTranspilerName": false }],
-    "react/forbid-prop-types": [1, {"forbid": ["any"]}],
     "react/jsx-boolean-value": 0,
     "react/jsx-closing-bracket-location": 0,
-    "react/jsx-curly-spacing": 1,
+    "react/jsx-curly-spacing": 0,
     "react/jsx-indent-props": 0,
     "react/jsx-key": 1,
     "react/jsx-max-props-per-line": 0,
@@ -64,10 +86,20 @@
     "react/prefer-es6-class": 1,
     "react/prop-types": 1,
     "react/react-in-jsx-scope": 1,
-    "import/extensions": 1,
+    "import/extensions": [1, {
+      "js": "never",
+      "jsx": "never",
+      "css": "always",
+      "ico": "always",
+      "json": "always",
+      "less": "always"
+    }],
+    "import/named": 0,
+    "import/no-unresolved": 2,
     "react/self-closing-comp": 1,
     "react/sort-comp": 1
   },
   "globals": {
+    "process": "process"
   }
 }

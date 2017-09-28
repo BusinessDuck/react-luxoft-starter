@@ -1,33 +1,41 @@
 {
+  "plugins": [
+    "transform-decorators-legacy",
+    "transform-class-properties",
+    "transform-class-constructor-call",
+    [
+      "transform-runtime",
+      {
+        "helpers": false,
+        "polyfill": false,
+        "regenerator": true
+      }
+    ]
+  ],
   "presets": [
+    "stage-0",
+    ["es2015", { "modules": false , "compact": false}],
+    "latest",
     "react",
-    "stage-1"
+    "react-optimize"
   ],
   "env": {
     "development": {
       "presets": [
-        "latest",
         "react-hmre"
       ]
     },
     "production": {
-      "presets": [
-        ["latest", {
-          "es2015": {
-            "modules": false
-          }
-        }]
+      "ignore": [
+        "**/*.spec.jsx",
+        "**/*.spec.js"
       ],
       "plugins": [
         "transform-react-constant-elements",
         "transform-react-remove-prop-types"
-      ]
-    },
-    "test": {
-      "presets": [
-        "latest"
-      ]
+      ],
+      "minified": true,
+      "comments": false
     }
   }
 }
-

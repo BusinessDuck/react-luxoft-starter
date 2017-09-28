@@ -1,0 +1,26 @@
+{
+  "globals": {
+    "__API__": "/api/v1",
+    "__BASEPATH__": "/demo"
+  },
+  "transform": {
+    ".*": "<rootDir>/node_modules/babel-jest"
+  },
+  "moduleDirectories": [
+    "src",
+    "node_modules"
+  ],
+  "moduleNameMapper": {
+    "^.+\\.(css|scss|sass)$": "identity-obj-proxy",
+    "^.+\\.(gif|ttf|eot|svg|woff|woff2|ico|png|jpg)$": "<rootDir>/tools/fileMock.js"
+  },
+  "unmockedModulePathPatterns": [
+    "<rootDir>/node_modules/react",
+    "<rootDir>/node_modules/react-dom",
+    "<rootDir>/node_modules/react-addons-test-utils",
+    "<rootDir>/node_modules/fbjs"
+  ],
+  "transformIgnorePatterns": [
+    "node_modules/(?!dit-)"
+  ]
+}
