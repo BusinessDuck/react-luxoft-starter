@@ -1,5 +1,5 @@
 ## React Boilerplate by [Luxoft](http://luxoft.com)
-![Luxoft LLC](https://github.com/BusinessDuck/react-luxoft-starter/.github/logo.png)
+![Luxoft LLC](https://github.com/BusinessDuck/react-luxoft-starter/blob/master/.github/logo.png)
 
 ## Technologies
 Slingshot offers a rich development experience using the following technologies:
