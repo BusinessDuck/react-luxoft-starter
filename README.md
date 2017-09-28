@@ -1,7 +1,4 @@
-## Mocks based on [url-pattern](https://www.npmjs.com/package/url-pattern) [json-schema-faker](https://github.com/json-schema-faker/json-schema-faker)
-
-### See the docs [Mocks](https://github.com/BusinessDuck/react-luxoft-starter/blob/master/docs/mocks.md)
-
+# React Boilerplate by [Luxoft](http://luxoft.com)
 
 
 ## Technologies
@@ -32,7 +29,7 @@ The starter kit includes a working example app that puts all of the above to use
 | prestart | Runs automatically before start. Calls remove-dist script which deletes the dist folder. This helps remind you to run the build script before committing since the dist folder will be deleted if you don't. ;) |
 | start | Runs tests, lints, starts dev webserver, and opens the app in your default browser. Supported parameters like (*1) proxyUrl="http://localhost:3002/api" apiUrl="..." basePath="..." |
 | lint:tools | Runs ESLint on build related JS files. (eslint-loader lints src files via webpack when `npm start` is run) |
-| open:mocks | Runs Mock standalone server (default port is 3002) on localhost
+| open:mocks | Runs Mock standalone server (default port is 3002) on localhost. See the docs [Mocks](https://github.com/BusinessDuck/react-luxoft-starter/blob/master/docs/mocks.md)
 | clean-dist | Removes everything from the dist folder. |
 | remove-dist | Deletes the dist folder. |
 | create-dist | Creates the dist folder and the necessary subfolders. |
@@ -44,6 +41,7 @@ The starter kit includes a working example app that puts all of the above to use
 | analyze-bundle | Analyzes webpack bundles for production and gives you a breakdown of where modules are used and their sizes via a convenient interactive zoomable treemap. |
 
 ### (*1) if you pass proxyUrl, dev server enable proxy on the server port (localhost:3000 default) requests with /api pattern will solved by proxy
+### Mocks based on [url-pattern](https://www.npmjs.com/package/url-pattern) [json-schema-faker](https://github.com/json-schema-faker/json-schema-faker)
 
 ### Can you explain the folder structure? <a name="can-you-explain-the-folder-structure"></a>
 ```
