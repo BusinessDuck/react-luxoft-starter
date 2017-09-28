@@ -25,7 +25,7 @@ Slingshot offers a rich development experience using the following technologies:
 
 The starter kit includes a working example app that puts all of the above to use.
 
-##Build
+## Build
 
 | **Script** | **Description** |
 |----------|-------|
