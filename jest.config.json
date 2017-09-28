@@ -22,5 +22,9 @@
   ],
   "transformIgnorePatterns": [
     "node_modules/(?!dit-)"
+  ],
+  "setupFiles": [
+    "<rootDir>/tools/jestFiles/shim.js",
+    "<rootDir>/tools/jestFiles/testConfig.js"
   ]
 }

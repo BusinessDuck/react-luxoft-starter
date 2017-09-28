@@ -2,7 +2,6 @@ import * as React from "react";
 import { shallow } from "enzyme";
 import { UserListComponent } from "../index";
 
-
 describe('UserList component', function () {
 
   const users = [
